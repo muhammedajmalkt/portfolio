@@ -1,0 +1,402 @@
+body {
+    background-color: #081b29;
+    color: aliceblue;
+    font-family: 'poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.firstnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: #081b29;
+    
+}
+
+.firstnav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+  
+
+
+} 
+
+
+
+.firstcenter {
+    display: flex;
+    flex-direction: row;
+    /* position: absolute; */
+    margin-top: 150px;
+}
+
+.iam a {
+    text-decoration: none;
+    color: white;
+}
+
+.iam a:hover {
+    color: #00abf0;
+
+}
+
+.mainsection {
+    width: 90%;
+    margin:50px auto;
+    padding-top: 30px;
+
+}
+
+.profile {
+    margin-left: 350px;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    object-fit: scale-down;
+    /* filter: drop-shadow(1px 1px 20px #00abf0 ); */
+    animation: profileani 3s  ease-in  infinite;
+    
+    
+
+}
+@keyframes profileani{
+    0%{
+        filter: drop-shadow(1px 1px 10px #00abf0 );
+
+        
+    }
+    50%{
+        filter: drop-shadow(1px 1px 20px #00abf0 );
+
+     
+    }
+    100%{
+        filter: drop-shadow(1px 1px 10px #00abf0 );
+
+      
+    }
+}
+
+.maintext {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: larger;
+}
+
+.socialicon {
+    margin-top: 80px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+
+}
+
+.socialicon i {
+    border: 1px solid #00abf0;
+    padding: 10px 11px;
+    border-radius: 100%;
+    color: #00abf0;
+}
+
+.socialicon i:hover {
+    background-color: #00abf0;
+    color: aliceblue;
+    box-shadow: 1px 1px 1.5px 1.5px #00abf0;
+}
+
+.aboutsection {
+    width: 90%;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 200px;
+    /* background-color: yellow; */
+
+
+
+}
+
+.abouttext {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.abtprofile {
+    width: 500px;
+    height: 500px;
+    object-fit: scale-down;
+
+}
+
+.textabout {
+    margin-top: 100px;
+}
+
+.skillsection {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 400px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+
+.skillhead {
+    text-align: center;
+    padding-top: 250px;
+
+
+}
+
+.imgskill {
+    width: 250px;
+    height: 200px;
+    object-fit: scale-down;
+
+}
+
+.imghover:hover {
+    color: #00abf0;
+    text-shadow: 1px 1px 4px #00abf0;
+}
+
+
+.projecthead {
+    text-align: center;
+    /* padding-bottom: 150px; */
+    padding-top: 200px;
+    margin-bottom: 120px;
+}
+
+.projectsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 400px;
+    
+
+
+}
+
+.projectsection,
+.nav {
+
+    width: 90%;
+    margin: auto;
+
+}
+
+.nav {
+    background-color: rgb(241, 238, 238);
+    width: 340px;
+    text-align: center;
+    border-radius: 7px;
+    color: rgb(92, 92, 92);
+
+}
+
+.nav:hover {
+    box-shadow: 1px 1px 3px 3px white;
+}
+
+.imgnav {
+    height: 150px;
+    width: 300px;
+    padding: 20px;
+}
+
+
+.contactsection{
+    width:70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    /* padding-top: 400px; */
+     padding-bottom: 200px; 
+
+
+}.contactinput{
+    border: 1px solid rgb(153, 153, 153);
+    padding: 20px;
+    border-radius: 7px;
+}
+.contactinput input,.contactinput textarea{
+    width: 500px;
+    height: 35px;
+    background-color:rgb(181, 184, 192) ;
+    border: 1px solid;
+    border-radius: 7px;
+    
+}
+.contactinput input:focus ,.contactinput textarea:focus{
+    outline: 1.5px solid #00abf0;
+
+}
+
+
+.contactbtn{
+    width: 150px;
+    height: 40px;
+    background-color: #00abf0;
+    color: aliceblue;
+    border: 1px solid #00abf0;
+    border-radius: 7px;
+
+}
+.contactinput textarea{
+    height: 60px;
+    
+}
+.contacttxt{
+    margin-left: 80px;
+    font-size: x-large;
+
+
+}
+.contacttxt h3{
+    color: #00abf0;
+}
+.contacticon{
+    position: relative;
+    right: 60px; 
+    bottom: 200px;
+    color: #00abf0;
+    width: 50%;
+    margin: auto;
+    
+
+}
+.contacticon i{
+    border: 1px solid #00abf0;
+    color: #00abf0;
+    padding: 9px 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+.contacticon i:hover{
+    background-color: #00abf0;
+    color: aliceblue;
+}
+@media screen and (max-width:600px)  {
+    .firstnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        position:fixed;
+        top: 0;
+        width: 100%;
+        background-color: #081b29;
+        gap: 50px;
+        font-size: small;
+        
+        
+    }.mainsection{
+        margin: 0 0;
+    }
+    .firstcenter{
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    .profile{
+        margin-left: 0;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+
+    }
+    .socialicon{
+        justify-content: center;
+        margin:  auto ;
+
+      
+    }
+    .maintext{
+        margin: 0;
+    }
+    .aboutsection{
+        flex-direction: column-reverse;
+        margin:  0 ;
+        gap: 0;
+        padding-top: 0;
+    }
+    .abtprofile{
+        
+        height: 300px;
+        width: 300px;
+        margin-left: 30px;
+    }
+    .abouttext{
+        flex-direction: column;
+        gap: 3px;
+    }.textabout{
+        margin-top: 30px;
+    }
+    .textabout p{
+        width: 90%;
+        margin: auto;
+    }
+    .skillsection{
+        /* width: 80%;
+        margin: auto; */
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+    .imgskill{
+        width: 100px;
+    }.projectsection{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 100px;
+    }.skillhead{
+        padding-top: 100px;
+    }
+    .projecthead{
+
+        padding-top: 100px;
+    } 
+    .contactsection{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 50px;
+        
+
+    }.contactinput input,.contactinput textarea{
+        width: 280px;
+    }
+    .contacticon{
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .contacttxt{
+        margin-left: 0;
+        font-size: large;
+    }
+        
+    
+}
+
+
+
